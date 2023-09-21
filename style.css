@@ -1,0 +1,87 @@
+:root { 
+    --primary-red-color: #a70404;
+    --secondary-white-color: #FFFFFF;
+    --darkgray-color: #1D1C1C;
+    --black-color: #1D1C1C;
+  }
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #a70404;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: flex;
+    min-height: calc(100vh - 20px);
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    flex: 1;
+    background: #FFFFFF;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  a {
+      text-decoration: none;
+      color: #1D1C1C;
+      padding: 20px;
+      font-weight: bold;
+  }
+
+  li {
+      margin-top: 30px;
+  }
+  
+  /* Style the content */
+  article {
+    flex: 3;
+    background-color: #000000;
+    padding: 30px;
+    color: white;
+  }
+
+  article p {
+      margin-top: 25px;
+  }
+
+  img {
+    margin-top: 30px;
+    width: 400px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #1D1C1C;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      flex-direction: column;
+    }
+  }
